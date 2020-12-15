@@ -101,7 +101,7 @@ public class PageApiTest {
         String address="Bangalore";
         long categoryId=123L;
         String contactNumber="1234567890";
-        Page updatedPage = new Page(businessName, address, categoryId, contactNumber);
+        Page updatedPage = new Page( businessName, address, categoryId, contactNumber);
 
 
         ResponseEntity<String> updateResponse = restTemplate.exchange("/pages/" + id, HttpMethod.PUT, new HttpEntity<>(updatedPage, null), String.class);
