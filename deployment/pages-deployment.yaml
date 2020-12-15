@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-        - image: maremilan/pages:2.0
+        - image: bsiqin/pages:pipeline
           name: pages
           ports:
             - containerPort: 8080
