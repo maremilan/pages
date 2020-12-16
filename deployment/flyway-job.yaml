@@ -11,6 +11,13 @@ spec:
       containers:
         - name: flyway
           image: flyway/flyway:6.4.4
+          resources:
+            requests:
+              memory: 500Mi
+              cpu: 0.25
+            limits:
+              memory: 900Mi
+              cpu: 1
           args:
             - info
             - migrate
