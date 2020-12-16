@@ -24,7 +24,7 @@ spec:
           hostPath:
             path: /finchley
       containers:
-        - image: bsiqin/pages:monitor
+        - image: bsiqin/pages:distributed
           name: pages
           resources:
             requests:
